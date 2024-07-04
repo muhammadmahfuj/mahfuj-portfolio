@@ -1,28 +1,33 @@
-/* Root Color */
+/* Root Settings */
 :root {
+   --color-accent: #cbd8f8;
+   --color-body: #7D89A6;
+   --color-heading: #78BF13;
+   --color-hover: #7091FF;
    --color-primary: #1E2133;
    --color-secondary: #162036;
-   --color-accent: #CBD8F8;
-   --color-heading: #78BF13;
    --color-text: #F8F3E6;
-   --color-body: #7D89A6;
-   --color-hover: #7091FF;
+}
+*{
+   box-sizing: border-box;
 }
 
 /* Typography */
 
 html {
    font-size: 62.5%;
+   background-color: var(--color-primary);
 }
 body{
+   color: var(--color-body);
    font-family: 'Fira Code', Arial, Helvetica, sans-serif;
    font-size: 1.6rem;
    line-height: 1.5;
-   color: var(--color-body);
 }
 h1, h2, h3 {
    color: var(--color-heading);
    margin-bottom: 1rem;
+   font-weight: 500;
 }
 h1{
    font-size: 4.5rem;
@@ -35,5 +40,90 @@ h3{
    margin-bottom: 1rem;
 }
 p{
-   margin-top: 0;
+   margin: 0;
+}
+
+/* Links */
+a{
+   text-decoration: none;
+}
+
+
+/* Skills and Proficiencies */
+.skill-set{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   font-size: 2.5rem;
+   gap: 3rem;
+}
+
+.place-holder{
+   background-color: var(--color-secondary);
+   border-radius: 5.37px;
+   border: 0.45px solid var(--color-body);
+   margin-bottom: 2rem;
+   padding: 2rem;
+}
+.placeholder__tech{
+   /* background-color: var(--color-secondary);
+   border-radius: 5.37px;
+   border: 0.45px solid var(--color-body);
+   margin-bottom: 2rem;
+   padding: 2rem; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 18rem;
+   height: 18rem;
+}
+
+.technologies{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr );
+   column-gap: 5rem;
+   font-size: 2.5rem;
+}
+.skillset__icons{
+   float: left;
+   padding-right: 2rem;
+}
+
+/* Progressbar */
+
+
+.progressbar{
+   background-color: var(--color-body);
+   border-radius: 1px;
+   height: .5rem;
+   margin-top: 2rem;
+   margin-bottom: .5rem;
+   width: 35rem;
+}
+.skills{
+   height: .5rem;
+}
+.html{
+   width: 70%; background-color: #EA580C;
+}
+.css{
+   width: 60%; background-color: #2196F3;
+}
+.js{
+   width: 10%; background-color: #FFDF00;
+}
+
+
+.main-grid{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 4rem;
+}
+
+.skillset-header{
+   text-align: center;
+   margin-bottom: 5rem;
 }
