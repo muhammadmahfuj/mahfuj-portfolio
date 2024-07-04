@@ -1,3 +1,4 @@
+/* Root Color */
 :root {
    --color-primary: #1E2133;
    --color-secondary: #162036;
@@ -6,4 +7,33 @@
    --color-text: #F8F3E6;
    --color-body: #7D89A6;
    --color-hover: #7091FF;
+}
+
+/* Typography */
+
+html {
+   font-size: 62.5%;
+}
+body{
+   font-family: 'Fira Code', Arial, Helvetica, sans-serif;
+   font-size: 1.6rem;
+   line-height: 1.5;
+   color: var(--color-body);
+}
+h1, h2, h3 {
+   color: var(--color-heading);
+   margin-bottom: 1rem;
+}
+h1{
+   font-size: 4.5rem;
+}
+h2{
+   font-size: 3.5rem;
+}
+h3{
+   font-size: 2.5rem;
+   margin-bottom: 1rem;
+}
+p{
+   margin-top: 0;
 }
