@@ -75,6 +75,19 @@ a{
    margin-bottom: 2rem;
    padding: 2rem;
 }
+
+.place-holder-image{
+   align-items: center;
+   background-color: var(--color-secondary);
+   border-radius: 5.37px;
+   border: 0.45px solid var(--color-body);
+   display: flex;
+   justify-content: center;
+   /* overflow: hidden; */
+   width: 39rem;
+   height: 42rem;
+   position: relative;
+}
 .placeholder__tech{
    /* background-color: var(--color-secondary);
    border-radius: 5.37px;
@@ -207,7 +220,15 @@ a{
 .image-container-big{
    height: 100%;
    /* width: 100%; */
-   object-fit:contain;
+   object-fit: contain;
+}
+
+.image-container-small{
+   max-height: 100%;
+   object-fit: cover;
+   padding-top: 1.5rem;
+   transform: scaleX(-1);
+   /* position: absolute; */
 }
 
 .banner-leftside{
@@ -215,4 +236,44 @@ a{
    flex-direction: column;
    /* padding-left: 50rem; */
    row-gap: 1rem;
+}
+.social-media-icons{
+   position: absolute;
+   top: 1rem;
+   left: -1rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+
+/* .icon-holder{
+   position: absolute;
+   z-index: 1;
+   left: -1rem;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+/* .github-icon{
+   top: 1rem;
+}
+.linkedin-icon{
+   top: 4rem;
+}
+
+.fb-icon{
+   top: 7rem;
+}
+.whatsapp-icon{
+   top: 10rem;
+}
+.yt-icon{
+   top: 13rem;
+} */
+.icon-holder:hover{
+   transform: scale(1.2) translateZ(10px); /* Increase size and move forward */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+}
+
+.about-me{
+   margin: 10rem 0;
 }
