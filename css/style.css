@@ -8,6 +8,7 @@
    --color-secondary: #162036;
    --color-text: #F8F3E6;
 }
+
 *{
    box-sizing: border-box;
 }
@@ -18,27 +19,33 @@ html {
    font-size: 62.5%;
    background-color: var(--color-primary);
 }
+
 body{
    color: var(--color-body);
    font-family: 'Fira Code', Arial, Helvetica, sans-serif;
    font-size: 1.6rem;
    line-height: 1.5;
 }
+
 h1, h2, h3 {
    color: var(--color-heading);
    margin-bottom: 1rem;
    font-weight: 500;
 }
+
 h1{
    font-size: 4.5rem;
 }
+
 h2{
    font-size: 3.5rem;
 }
+
 h3{
    font-size: 2.5rem;
    margin-bottom: 1rem;
 }
+
 p{
    margin: 0;
 }
@@ -47,7 +54,6 @@ p{
 a{
    text-decoration: none;
 }
-
 
 /* Skills and Proficiencies */
 .skill-set{
@@ -126,4 +132,42 @@ a{
 .skillset-header{
    text-align: center;
    margin-bottom: 5rem;
+}
+
+/* Navbar */
+.nav-wrapper{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem;
+}
+.logo-name{
+   white-space: nowrap; /* Prevents wrapping */
+   margin: 0; /* Remove default margin */
+   color: var(--color-heading);
+   font-weight: 600;
+   font-size: 2.5rem;
+   margin-left: 1rem;
+}
+.navbar{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   width: 100%;
+
+}
+
+.nav-item{
+   margin: 0 10px;
+   color: var(--color-accent);
+   transition: color 0.15s;
+
+}
+
+.nav-item:hover, .nav-item:focus, .nav-item:active {
+   color: var(--color-hover);
 }
