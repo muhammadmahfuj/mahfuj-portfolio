@@ -1,9 +1,108 @@
-<div class="place-holder">
-  <span class="skillset__icons">
-    <img src="../images/icons/css-icon.svg" alt="html5 icon" />
-  </span>
-  <p>CSS</p>
-  <div class="progressbar">
-    <div class="skills css"></div>
-  </div>
-</div>
+<style>
+  :root {
+    --color-accent: #cbd8f8;
+    --color-body: #7d89a6;
+    --color-heading: #78bf13;
+    --color-hover: #7091ff;
+    --color-primary: #1e2133;
+    --color-secondary: #162036;
+    --color-text: #f8f3e6;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Typography */
+
+  html {
+    font-size: 62.5%;
+    background-color: var(--color-primary);
+  }
+
+  body {
+    color: var(--color-body);
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  .skill-set {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    gap: 3rem;
+  }
+
+  .place-holder {
+    background-color: var(--color-secondary);
+    border-radius: 5.37px;
+    border: 0.45px solid var(--color-body);
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+  .progressbar {
+    background-color: var(--color-body);
+    border-radius: 1px;
+    height: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    width: 35rem;
+  }
+
+  .skills {
+    height: 0.5rem;
+  }
+  .html {
+    width: 70%;
+    background-color: #ea580c;
+  }
+  .css {
+    width: 60%;
+    background-color: #2196f3;
+  }
+  .js {
+    width: 10%;
+    background-color: #ffdf00;
+  }
+  .main-grid{
+   display: flex;
+   flex-direction: row;
+    justify-content: flex-start;
+   /* align-items: flex-start; */
+   gap: 4rem;
+}
+</style>
+
+<article class="main-grid"">
+  <section class="skill-set">
+    <div class="place-holder">
+      <span class="skillset__icons">
+        <img src="../images/icons/html-icon.svg" alt="html5 icon" />
+      </span>
+      <p>Html</p>
+      <div class="progressbar">
+        <div class="skills html"></div>
+      </div>
+    </div>
+  
+    <div class="place-holder">
+      <span class="skillset__icons">
+        <img src="../images/icons/css-icon.svg" alt="html5 icon" />
+      </span>
+      <p>CSS</p>
+      <div class="progressbar">
+        <div class="skills css"></div>
+      </div>
+    </div>
+  
+    <div class="place-holder">
+      <span class="skillset__icons">
+        <img src="../images/icons/js-icon.svg" alt="html5 icon" />
+      </span>
+      <p>JS</p>
+      <div class="progressbar">
+        <div class="skills js"></div>
+      </div>
+    </div>
+  </section>
+</article>

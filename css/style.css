@@ -7,6 +7,7 @@
    --color-primary: #1E2133;
    --color-secondary: #162036;
    --color-text: #F8F3E6;
+   --max-width: 1200px;
 }
 
 *{
@@ -54,12 +55,15 @@ p{
 a{
    text-decoration: none;
 }
+.header,.main,.footer {
+   margin: auto;
+   max-width: var(--max-width);
+ }
 
 /* Skills and Proficiencies */
 .skill-set{
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
    font-size: 2.5rem;
    gap: 3rem;
 }
@@ -85,11 +89,16 @@ a{
    height: 18rem;
 }
 
-.technologies{
+.grid{
    display: grid;
-   grid-template-columns: repeat(3, 1fr );
    column-gap: 5rem;
    font-size: 2.5rem;
+}
+.grid--two-col{
+   grid-template-columns: repeat(2, 1fr );
+}
+.grid--three-col{
+   grid-template-columns: repeat(3, 1fr );
 }
 .skillset__icons{
    float: left;
@@ -135,39 +144,75 @@ a{
 }
 
 /* Navbar */
-.nav-wrapper{
+
+.navbar{
+   /* padding: 2rem; */
+   align-items: center;
    display: flex;
    justify-content: space-between;
-   align-items: center;
-   padding: 2rem;
+   margin-bottom: 5rem;
+   margin-top: 3rem;
 }
 .logo-name{
-   white-space: nowrap; /* Prevents wrapping */
-   margin: 0; /* Remove default margin */
-   color: var(--color-heading);
-   font-weight: 600;
    font-size: 2.5rem;
-   margin-left: 1rem;
+   font-weight: 600;
+   margin-left: 1rem; /* Remove default margin */
+   white-space: nowrap; /* Prevents wrapping */
 }
-.navbar{
+.navbar-icons{
+   align-items: center;
    display: flex;
    flex-direction: row;
-   justify-content: flex-end;
-   align-items: center;
+   justify-content: center;
+   list-style-type: none;
    margin: 0;
    padding: 0;
-   list-style-type: none;
    width: 100%;
-
 }
-
 .nav-item{
-   margin: 0 10px;
+   margin: 0 2rem;
    color: var(--color-accent);
+   font-size: 2rem;
    transition: color 0.15s;
-
 }
-
 .nav-item:hover, .nav-item:focus, .nav-item:active {
    color: var(--color-hover);
+}
+
+
+/* logo color */
+.heading-color{
+   color: var(--color-heading)
+}
+.text-color{
+   color: var(--color-text);
+}
+
+/* banner section */
+.banner-section{
+   color: var(--color-text);
+   font-size: 4.5rem;
+   margin: 2rem;
+   height: 50vh;
+
+}
+
+.body-text{
+   color: var(--color-body);
+   font-size: 1.6rem;
+   width: 50rem;
+   margin: 0;
+}
+
+.image-container-big{
+   height: 100%;
+   /* width: 100%; */
+   object-fit:contain;
+}
+
+.banner-leftside{
+   display: flex;
+   flex-direction: column;
+   /* padding-left: 50rem; */
+   row-gap: 1rem;
 }
