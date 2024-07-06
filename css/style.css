@@ -153,7 +153,12 @@ a{
    margin-right: 5.5rem;
    max-width: 100%;
 }
+.header{
+        background-image: url('/images/header-bg-main.svg');
+        background-repeat: no-repeat;
+        background-position: bottom right;
 
+}
 .skillset-header{
    text-align: center;
    margin-bottom: 5rem;
@@ -210,8 +215,7 @@ a{
    color: var(--color-text);
    font-size: 4.5rem;
    /* width: 100%; */
-   /* margin: 2rem; */
-   height: 50vh;
+   margin-top: 5rem;
 
 }
 
@@ -223,9 +227,7 @@ a{
 }
 
 .image-container-big{
-   height: 100%;
-   /* width: 100%; */
-   object-fit: contain;
+   width: 50rem;
 
 }
 
