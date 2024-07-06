@@ -237,6 +237,8 @@ a{
    /* padding-left: 50rem; */
    row-gap: 1rem;
 }
+/* about me section */
+
 .social-media-icons{
    position: absolute;
    top: 1rem;
@@ -277,3 +279,4 @@ a{
 .about-me{
    margin: 10rem 0;
 }
+
