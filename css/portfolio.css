@@ -18,7 +18,6 @@ box-shadow: 1px 4px 5px 0px rgba(27, 28, 37, 100%); */
 *{
    box-sizing: border-box;
 }
-
 html {
    font-size: 62.5%;
    background-color: var(--color-background);
@@ -30,16 +29,83 @@ body{
    font-size: 1.6rem;
    line-height: 1.5;
 }
+.main{
+   max-width: 120rem;
+}
 
 /* common styles */
-
+h1, h2, h3 {
+   color: var(--color-secondary);
+}
+a{
+   text-decoration: none;
+}
+li{
+   list-style: none;
+}
+.btn-primary{
+   border-radius: 2rem;
+   border: none;
+   padding: 0.8rem 2rem;
+   font-size: 1.8rem;
+   font-weight: 500;
+   text-align: center;
+   background-color: var(--color-primary);
+   color: var(--color-secondary);
+}
+.btn-secondary{
+   background-color: var(--color-footer);
+   border-color: var(--color-body-text)
+}
+/* .btn-primary:focus, .btn-primary:active{
+   border: 0.1rem solid;
+   border-color: var(--color-body-text);
+} */
 
 /* header */
 
+/* navbar */
+
+.h1-first-color{
+   color: var(--color-primary);
+}
+.h1-second-color{
+   color: var(--color-secondary);
+}
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 2.5rem 12rem;
+
+}
+.logo{
+   display: flex;
+   align-items: center;
+}
+
+.logo-name{
+   margin-left: 1rem;
+}
+
+.nav-heads{
+   display: flex;
+   justify-content:flex-end;
+   align-items: center;
+   gap: 4rem;
+}
+.nav-items{
+   color: var(--color-small-text);
+}
+
+
+
 /* hero section */
 
-
 /* main */
+
+
+
 
 /* about me */
 
