@@ -77,8 +77,8 @@ li{
    justify-content: space-between;
    align-items: center;
    margin: 2.5rem 12rem;
-
 }
+
 .logo{
    display: flex;
    align-items: center;
@@ -97,17 +97,36 @@ li{
 .nav-items{
    color: var(--color-small-text);
 }
-
-
-
 /* hero section */
+
+.header {
+   background-image: url(/images/header-bg-main.svg);
+   background-repeat: no-repeat;
+   background-position: bottom right;
+}
+.hero{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0rem 7rem 0rem 13rem;
+}
+.hero-image{
+   width: 50rem;
+   object-fit: cover;
+}
+
+.hero-text{
+   max-width: 52rem;
+}
+
 
 /* main */
 
-
-
-
 /* about me */
+
+
+
+
 
 /* skills */
 
