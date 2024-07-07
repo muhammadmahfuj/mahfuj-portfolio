@@ -36,6 +36,7 @@ body{
 /* common styles */
 h1, h2, h3 {
    color: var(--color-secondary);
+   margin: 0;
 }
 a{
    text-decoration: none;
@@ -116,7 +117,10 @@ li{
 }
 
 .hero-text{
-   max-width: 52rem;
+   max-width: 45rem;
+   display: flex;
+   flex-direction: column;
+   gap: 0.05rem;
 }
 
 
