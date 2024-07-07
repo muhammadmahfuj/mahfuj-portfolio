@@ -1,0 +1,51 @@
+:root{
+   --color-primary:#8A5CE5;
+   --color-secondary: #F8F3E6;
+   /* all buttons and headers get secondary color */
+   --color-body-text: #7D89A6;
+   /* border color also gets body text color */
+   --color-container: #1A2034;
+   --color-small-text: #CBD8F8;
+   /* all small titles gets this color */
+   --color-footer: #181B28;
+   --color-background: #1E2133;
+   --color-hover: #7091FF;
+}
+/* dropshadow | /* offset-x | offset-y | blur-radius | spread-radius | color
+box-shadow: 1px 4px 5px 0px rgba(27, 28, 37, 100%); */
+
+/* global styles */
+*{
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+   background-color: var(--color-background);
+}
+
+body{
+   color: var(--color-body-text);
+   font-family: 'Fira Code', Arial, Helvetica, sans-serif;
+   font-size: 1.6rem;
+   line-height: 1.5;
+}
+
+/* common styles */
+
+
+/* header */
+
+/* hero section */
+
+
+/* main */
+
+/* about me */
+
+/* skills */
+
+
+/* footer */
+/* connect with me */
+
