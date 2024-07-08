@@ -13,8 +13,7 @@
    --color-hover: #7091FF;
    --max-width: 144rem;
 }
-/* dropshadow | /* offset-x | offset-y | blur-radius | spread-radius | color
-box-shadow: 1px 4px 5px 0px rgba(27, 28, 37, 100%); */
+
 
 /* global styles */
 *{
@@ -38,6 +37,8 @@ body{
 /* common styles */
 h1, h2, h3 {
    color: var(--color-primary);
+}
+h1, h2, h3, p {
    margin: 0;
 }
 h1 {
@@ -52,6 +53,7 @@ a{
 li{
    list-style: none;
 }
+
 .btn {
    border-radius: 2rem;
    padding: 0.8rem 2rem;
@@ -74,12 +76,19 @@ li{
    border-color: var(--color-body-text);
 } */
 
-.container{
+.container {
    border-radius: 0.37rem;
    background-color: var(--color-container);
    border: 0.04rem solid var(--color-container-border);
    margin-bottom: 2rem;
    padding: 2rem;
+   /* dropshadow | offset-x | offset-y | blur-radius | spread-radius | color */
+   box-shadow: 1px 4px 5px 0px rgba(27, 28, 37, 100%);
+   transition: box-shadow 0.15s;
+}
+
+.container:hover{
+   box-shadow: 0px 0px 5px 0px rgba(138, 92, 229, 85%);
 }
 .body-text{
    font-size: 1.6rem;
@@ -129,7 +138,7 @@ li{
 /* hero section */
 
 .header {
-   background-image: url(images/header-bg-main.svg);
+   background-image: url(/images/header-bg-main.svg);
    background-repeat: no-repeat;
    background-position: bottom right;
 }
@@ -160,7 +169,7 @@ li{
    background-color: var(--color-footer);
 }
 .about-me-body{
-   padding: 10rem 5rem ;
+   padding: 10rem 10rem ;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -194,6 +203,11 @@ margin-left: 14rem;
    gap: 1.2rem;
 }
 
+.icon-holder:hover{
+   transform: scale(1.2) translateZ(10px); /* Increase size and move forward */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+}
+
 .details-container dt{
    color: var(--color-small-text);
  }
@@ -217,12 +231,6 @@ dd{
    margin: 0;
 }
 
-.intro{
-   max-width: 63rem;
-   max-height: 23rem;
-   
-}
-
 .details-title{
    font-size: 1.8rem;
    color: var(--color-small-text);
@@ -241,10 +249,10 @@ dd{
 
 .all-skills{
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
-   margin: 8rem;
 }
+
 
 .progressbar{
    background-color: var(--color-body-text);
@@ -260,7 +268,6 @@ dd{
    flex-direction: column;
    font-size: 2.5rem;
    gap: 2rem;
-   
 }
 
 .skills{
@@ -276,8 +283,6 @@ dd{
    width: 10%; background-color: #FFDF00;
 }
 
-
-
 .skillset__icons{
    float: left;
    padding-right: 2rem;
@@ -290,13 +295,14 @@ dd{
    justify-content: center;
    align-items: center;
    width: 18rem;
-   height: 18rem;
+   height: 15rem;
 }
 
 .grid{
    display: grid;
-   column-gap: 5rem;
+   column-gap: 8.5rem;
    font-size: 2.5rem;
+   margin-left: 4rem;
 }
 
 .grid--three-col{
