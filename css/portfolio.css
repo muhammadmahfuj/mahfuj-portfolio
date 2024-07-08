@@ -11,7 +11,7 @@
    --color-footer: #181B28;
    --color-background: #1E2133;
    --color-hover: #7091FF;
-   --max-width: 130rem;
+   --max-width: 144rem;
 }
 /* dropshadow | /* offset-x | offset-y | blur-radius | spread-radius | color
 box-shadow: 1px 4px 5px 0px rgba(27, 28, 37, 100%); */
@@ -160,7 +160,7 @@ li{
    background-color: var(--color-footer);
 }
 .about-me-body{
-   padding: 11rem 13rem ;
+   padding: 10rem 5rem ;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -193,24 +193,29 @@ margin-left: 14rem;
    flex-direction: column;
    gap: 1.2rem;
 }
-.details-container{
-   display: flex;
-   flex-wrap: wrap;
-}
-.details-container > div{
-   display: flex;
-   width: 100%;
-   margin-bottom: 10px;
- }
 
- .details-container dd, dt {
-   width: calc(33.33% - 1rem);
-   margin: 0 1rem;
-   text-align: left;
- }
- .details-container dt{
+.details-container dt{
    color: var(--color-small-text);
  }
+
+.details-container{
+   display: grid;
+   /* grid-template-columns: 17rem 25rem 10rem  ; */
+   grid-template: repeat(2, 1fr) / 1.5fr 2fr 0.3fr;
+   grid-row-gap: 2rem;
+   margin: 5rem 0;
+}
+
+   /* if h4 and p are  used in about me> details text section */
+/* .details-container > p{
+   margin: 0;
+   padding: 0;
+} */
+
+/* if dd is used in about me> details text section */
+dd{
+   margin: 0;
+}
 
 .intro{
    max-width: 63rem;
