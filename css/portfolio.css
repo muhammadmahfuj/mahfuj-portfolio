@@ -89,7 +89,7 @@ li{
    transition: box-shadow 0.15s;
 }
 
-.container:hover{
+.container:hover, input:hover, textarea:hover{
    box-shadow: 0px 0px 5px 0px rgba(138, 92, 229, 85%);
 }
 .body-text{
@@ -349,9 +349,7 @@ dd{
    input:is([type="text"], [type="email"], [type="tel"]), textarea {
       padding: 2rem;
     }
-    input:hover{
-      box-shadow: 0px 0px 5px 0px rgba(138, 92, 229, 85%);
-   }
+   
     .contact-body{
       display: flex;
       justify-content: center;
